@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="robots" content="noindex, nofollow">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Psicólogo Online</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #4ea8de; /* azul claro */
+      color: white;
+      padding: 1.5rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+header h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-top: 0.5rem;
+}
+
+    header p {
+      font-size: 1rem;
+      margin-top: 0.5rem;
+      font-weight: normal;
+    }
+
+    .perfil-img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 0.5rem auto 1rem;
+      display: block;
+      border: 4px solid white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    .section {
+      margin-bottom: 2rem;
+    }
+
+    .section h2 {
+      color: #023e8a;
+      margin-bottom: 1rem;
+    }
+
+    .services ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+
+    .services li::before {
+      content: "✔️ ";
+      margin-right: 0.5rem;
+    }
+
+    .contact-btn {
+      display: inline-block;
+      background: #0096c7;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .contact-btn:hover {
+      background: #00b4d8;
+    }
+
+    footer {
+      background: #023e8a;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    /* Desplegables estilo acordeón */
+    .accordion-header {
+      background: #e0e7ff;
+      border: 1px solid #023e8a;
+      border-radius: 6px;
+      padding: 12px 20px;
+      cursor: pointer;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #023e8a;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+      transition: background 0.3s ease;
+    }
+
+    .accordion-header:hover {
+      background: #c1d7ff;
+    }
+
+    .accordion-header.active {
+      background: #4ea8de;
+      color: white;
+    }
+
+    .accordion-content {
+      padding: 15px 20px;
+      border-left: 1px solid #023e8a;
+      border-right: 1px solid #023e8a;
+      border-bottom: 1px solid #023e8a;
+      border-radius: 0 0 6px 6px;
+      background: white;
+      margin-bottom: 15px;
+      display: none;
+    }
+
+    .accordion-content.open {
+      display: block;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      .contact-btn {
+        width: 100%;
+        text-align: center;
+      }
+
+      .perfil-img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        border: 4px solid white;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        margin: 0.5rem auto 1rem;
+        display: block;
+        object-fit: cover;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="font-size: 2.2rem; margin-bottom: 0.2rem;">PsicoZona Online</h1>
+        <p style="font-size: 1rem; margin-bottom: 1rem;">Lic. Federico Bina</p>
+        <p style="font-size: 1rem; margin-bottom: 1rem;">Psicólogo (M.P:13107)</p>
+
+        <img src="/images/foto.jpg" alt="Foto del psicólogo" class="perfil-img" />
+      </header>
+
+  <div class="container">
+
+    <section class="section">
+      <h2>Sobre mí</h2>
+      <p>Soy psicólogo graduado en la Universidad Nacional de Córdoba. Acompaño a jóvenes y adultos en procesos terapéuticos presenciales y online. En este espacio, enfocado en la atención virtual, brindo psicoterapia breve online desde un enfoque en Terapia Cognitivo Conductual integrada con Neurociencias, para promover el bienestar emocional y el desarrollo personal.</p>
+    </section>
+
+    <section class="section">
+        <h2>Psicoterapia Breve Online</h2>
+        <p>Psicoterapia breve online en 10 sesiones para mejorar tu bienestar, con enfoque práctico, personalizado y basado en evidencia.</p>
+      </section>
+
+    <section class="section services">
+      <h2>Servicios</h2>
+      <ul>
+        <li>Terapia individual para adultos</li>
+        <li>Orientación psicológica online</li>
+        <li>Ansiedad, estrés y depresión</li>
+        <li>Crecimiento personal y autoestima</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Más información</h2>
+
+      <div>
+        <div class="accordion-header" tabindex="0" aria-expanded="false" aria-controls="contenido2" id="header2">
+          Qué es la psicoterapia breve Online?
+          <span aria-hidden="true">+</span>
+        </div>
+        <div class="accordion-content" id="contenido2" role="region" aria-labelledby="header2" hidden>
+          <p>La psicoterapia breve online es un tratamiento psicológico estructurado en un conjunto de 10 sesiones, orientado a fortalecer los recursos personales y habilidades del consultante, con el objetivo de mejorar su calidad de vida. Este enfoque aborda situaciones como el estrés, la ansiedad, la depresión, la resolución de problemas y la regulación emocional, entre otras. Se basa en los principios de la Psicología Cognitivo Conductual, integrando conocimientos de neurociencias, y haciendo foco en la relación entre pensamientos, emociones y conductas. Durante el proceso terapéutico se consideran la historia de vida, el contexto actual y las características personales de cada consultante, para lograr una comprensión profunda de sus desafíos. Desde las primeras sesiones, se trabaja de manera conjunta en objetivos específicos, definidos con claridad, para dar respuestas concretas a necesidades puntuales. El propósito de esta modalidad es que el consultante adquiera herramientas psicológicas prácticas, que pueda aplicar tanto durante el tratamiento como una vez finalizado, promoviendo cambios reales y sostenibles en su vida cotidiana.</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="accordion-header" tabindex="0" aria-expanded="false" aria-controls="contenido2" id="header2">
+          Cómo funcionan las sesiones?
+          <span aria-hidden="true">+</span>
+        </div>
+        <div class="accordion-content" id="contenido2" role="region" aria-labelledby="header2" hidden>
+          <p>Las sesiones son semanales y tienen una duración de entre 45 minutos y una hora. Se realizan a través de Google Meet, una plataforma segura de videollamadas que garantiza la privacidad de los datos y no requiere instalar ninguna aplicación: solo se necesita un celular o computadora con acceso a Internet.
+
+            El tratamiento está a cargo de un psicólogo matriculado, que acompaña al consultante en un proceso de autodescubrimiento y aprendizaje. A lo largo de este camino, se trabajan habilidades y recursos personalizados según las necesidades específicas de cada persona.
+            
+            El pago de las sesiones puede realizarse a través de Rapipago, Pago Fácil, Mercado Pago, Paypal, Western Union, tarjetas de crédito o transferencia bancaria mediante CBU.</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="accordion-header" tabindex="0" aria-expanded="false" aria-controls="contenido3" id="header3">
+          Beneficios de la Psicoterapia breve Online
+          <span aria-hidden="true">+</span>
+        </div>
+        <div class="accordion-content" id="contenido3" role="region" aria-labelledby="header3" hidden>
+          <p>En los últimos años, diversos estudios científicos han demostrado que la psicoterapia breve online es tan eficaz como los tratamientos presenciales prolongados para tratar muchos problemas psicológicos.
+
+            A diferencia de enfoques tradicionales de larga duración, la terapia breve online es un método moderno y validado, que se enfoca en objetivos claros y resultados concretos a corto plazo.
+            
+            Gracias a la tecnología, podés acceder a terapia desde cualquier lugar, usando solo una computadora o teléfono con conexión a Internet. Esto elimina dificultades como el transporte o la falta de tiempo.
+            
+            Muchas personas que viven en zonas con poco acceso a atención profesional, o que enfrentan barreras físicas, psicológicas o idiomáticas, han encontrado en la terapia online una solución accesible y cómoda.
+            
+            Además, hay quienes prefieren esta modalidad por la flexibilidad y privacidad que ofrece.</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="accordion-header" tabindex="0" aria-expanded="false" aria-controls="contenido4" id="header4">
+          Limitaciones de la Psicoterapia breve Online
+          <span aria-hidden="true">+</span>
+        </div>
+        <div class="accordion-content" id="contenido4" role="region" aria-labelledby="header4" hidden>
+          <p>Es importante aclarar que la psicoterapia breve online no es recomendada para trastornos severos que afecten gravemente al consultante o que impliquen riesgo para sí mismo o para terceros.
+
+            También hay casos específicos donde, aunque no haya gravedad o riesgo, esta modalidad no es la mejor opción y puede requerir tratamientos más intensivos, prolongados o presenciales.
+            
+            Por eso, en la primera sesión se evalúa si este tipo de terapia se ajusta a tus necesidades y características personales.</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="accordion-header" tabindex="0" aria-expanded="false" aria-controls="contenido5" id="header5">
+          Requisitos técnicos para llevar a cabo el tratamiento
+          <span aria-hidden="true">+</span>
+        </div>
+        <div class="accordion-content" id="contenido5" role="region" aria-labelledby="header5" hidden>
+          <p>Para realizar la psicoterapia breve online, es necesario contar con una conexión a Internet estable que permita una videollamada fluida, con buena calidad de imagen y sonido, para que la experiencia sea cómoda y efectiva.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Contacto</h2>
+      <p>¿Querés empezar terapia o tenés alguna consulta?</p>
+      <a class="contact-btn" href="https://wa.me/549XXXXXXXXXX" target="_blank" rel="noopener noreferrer">Contactame por WhatsApp</a>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Lic. Federico Bina - Psicólogo Online</p>
+  </footer>
+
+  <script>
+    // Script acordeón accesible
+    document.querySelectorAll('.accordion-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const expanded = header.getAttribute('aria-expanded') === 'true';
+        document.querySelectorAll('.accordion-header').forEach(h => {
+          h.setAttribute('aria-expanded', 'false');
+          h.classList.remove('active');
+          document.getElementById(h.getAttribute('aria-controls')).hidden = true;
+          document.getElementById(h.getAttribute('aria-controls')).classList.remove('open');
+        });
+        if (!expanded) {
+          header.setAttribute('aria-expanded', 'true');
+          header.classList.add('active');
+          const content = document.getElementById(header.getAttribute('aria-controls'));
+          content.hidden = false;
+          content.classList.add('open');
+        }
+      });
+
+      header.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          header.click();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
